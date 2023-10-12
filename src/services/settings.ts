@@ -8,7 +8,8 @@ export const APIURLs = {
     // Edit cartList
     getCartList: (cartListId: string) => `${baseApiURL}/cartList/${cartListId}`,
     // add and remove
-    editCartList: ({ cartListId, productId }: {cartListId: string, productId: string}) => `${baseApiURL}/cartList/${cartListId}/${productId}`,
+    addToCartList: (cartListId: string) => `${baseApiURL}/cartList/${cartListId}/add`,
+    removeFromCartList: (cartListId: string) => `${baseApiURL}/cartList/${cartListId}/remove`,
 
     // Product
     getProduct: (productId: string) => `${baseApiURL}/products/${productId}`,
@@ -24,7 +25,8 @@ export const APIURLs = {
     // Wish list
     getWishList: (wishListId: string) => `${baseApiURL}/wishList/${wishListId}`,
     // add and remove
-    editWishList: ({ wishListId, productId }: {wishListId: string, productId: string}) => `${baseApiURL}/wishList/${wishListId}/${productId}`,
+    addToWishList: ( wishListId: string) => `${baseApiURL}/wishList/${wishListId}/add`,
+    removeFromWishList: ( wishListId: string) => `${baseApiURL}/wishList/${wishListId}/remove`,
 
     // Categories
     // men's clothing
