@@ -1,11 +1,9 @@
-import "./App.css";
+import './App.css'
 
-function App() {
+export const App = (): JSX.Element => {
   return (
     <div>
       <p>Hello World</p>
     </div>
-  );
+  )
 }
-
-export default App;
