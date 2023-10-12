@@ -1,14 +1,15 @@
 import { APIURLs, errorWithStatus } from "./settings";
 
-export async function login(username: string, password: string) {
+export async function logIn(email: string, password: string) {
     const response = await fetch(APIURLs.authLogIn, {
-        method: "POST",
+        method: 'POST',
+        credentials: 'include',
         headers: {
             Accept: 'application/json',
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            username,
+            email,
             password
         })
     });
