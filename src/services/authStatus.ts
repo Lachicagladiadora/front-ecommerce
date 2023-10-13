@@ -1,7 +1,7 @@
 import { APIURLs, errorWithStatus } from "./settings";
 
 export async function authStatus() {
-    const response = await fetch(APIURLs.authLogIn, {
+    const response = await fetch(APIURLs.authStatus, {
         method: 'GET',
         credentials: 'include',
         headers: {
