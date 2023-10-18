@@ -6,13 +6,13 @@ export const APIURLs = {
   createUser: `${baseApiURL}/users`,
 
   // Edit cartList
-  getCartList: (cartListId: string) => `${baseApiURL}/cartList/${cartListId}`,
+  getCartList: (cartListId: number) => `${baseApiURL}/cartList/${cartListId}`,
   // add and remove
-  addToCartList: (cartListId: string) => `${baseApiURL}/cartList/${cartListId}/add`,
-  removeFromCartList: (cartListId: string) => `${baseApiURL}/cartList/${cartListId}/remove`,
+  addToCartList: (cartListId: number) => `${baseApiURL}/cartList/${cartListId}/add`,
+  removeFromCartList: (cartListId: number) => `${baseApiURL}/cartList/${cartListId}/remove`,
 
   // Product
-  getProduct: (productId: string) => `${baseApiURL}/products/${productId}`,
+  getProduct: (productId: number) => `${baseApiURL}/products/${productId}`,
 
   // Product list
   getProducts: `${baseApiURL}/products`,
@@ -23,10 +23,10 @@ export const APIURLs = {
   authStatus: `${baseApiURL}/auth/status`,
 
   // Wish list
-  getWishList: (wishListId: string) => `${baseApiURL}/wishList/${wishListId}`,
+  getWishList: (wishListId: number) => `${baseApiURL}/wishList/${wishListId}`,
   // add and remove
-  addToWishList: (wishListId: string) => `${baseApiURL}/wishList/${wishListId}/add`,
-  removeFromWishList: (wishListId: string) => `${baseApiURL}/wishList/${wishListId}/remove`,
+  addToWishList: (wishListId: number) => `${baseApiURL}/wishList/${wishListId}/add`,
+  removeFromWishList: (wishListId: number) => `${baseApiURL}/wishList/${wishListId}/remove`,
 
   // Categories
   // men's clothing
