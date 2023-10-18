@@ -71,7 +71,7 @@ export const Home = (): JSX.Element => {
         <Link to={'/categories'}>Categories</Link>
       <Routes>
         <Route path='/products/:productName' element={<Product />}/>
-        <Route path='/cartList/:cartListId/add' element={<Cart />}/>
+        {/* <Route path='/cartList/:cartListId/add' element={<Cart />}/> */}
       </Routes>
     </main>
   )

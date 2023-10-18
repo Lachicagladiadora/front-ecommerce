@@ -1,7 +1,8 @@
+import { type Product } from './interfaceProduct'
 import { APIURLs, type errorWithStatus } from './settings'
 
-export async function getProduct <Product> (_id: number): Promise<Product | Error> {
-  const response = await fetch(APIURLs.getProduct, {
+export async function getProduct (productId: number): Promise<Product> {
+  const response = await fetch(APIURLs.getProduct(productId), {
     method: 'GET',
     credentials: 'include',
     headers: {
