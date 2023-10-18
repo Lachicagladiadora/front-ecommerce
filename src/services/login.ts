@@ -1,6 +1,8 @@
 import { APIURLs, errorWithStatus } from "./settings";
+import { type Session } from './interfaceSession';
 
-export async function logIn(email: string, password: string) {
+
+export async function logIn(email: string, password: string): Promise<Session> {
     const response = await fetch(APIURLs.authLogIn, {
         method: 'POST',
         credentials: 'include',

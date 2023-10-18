@@ -1,6 +1,7 @@
 import { APIURLs, errorWithStatus } from "./settings";
+import { type Session } from './interfaceSession';
 
-export async function authStatus() {
+export async function authStatus(): Promise<Session> {
     const response = await fetch(APIURLs.authStatus, {
         method: 'GET',
         credentials: 'include',

@@ -1,6 +1,7 @@
 import { APIURLs, errorWithStatus } from "./settings";
+import { type Session } from './interfaceSession';
 
-export async function logOut() {
+export async function logOut(): Promise<Session> {
     const response = await fetch(APIURLs.authLogoOut, {
         method: 'POST',
         credentials: 'include',
