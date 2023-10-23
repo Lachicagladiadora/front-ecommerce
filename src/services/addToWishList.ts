@@ -1,6 +1,7 @@
-import { APIURLs, errorWithStatus } from "./settings";
+import { APIURLs, type errorWithStatus } from "./settings";
+import { type WishList } from "./interfaceWishList";
 
-export async function addToWishList(wishListId: string, productId: string) {
+export async function addToWishList(wishListId: number, productId: number): Promise<WishList> {
     const response = await fetch(APIURLs.addToWishList(wishListId), {
         method: 'POST',
         credentials: 'include',

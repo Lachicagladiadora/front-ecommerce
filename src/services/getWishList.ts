@@ -1,6 +1,7 @@
 import { APIURLs, errorWithStatus } from "./settings";
+import { type WishList } from "./interfaceWishList";
 
-export async function getWishList(wishListId: string) {
+export async function getWishList(wishListId: number): Promise<WishList> {
     const response = await fetch(APIURLs.getWishList(wishListId), {
         method: 'GET',
         credentials: 'include',
