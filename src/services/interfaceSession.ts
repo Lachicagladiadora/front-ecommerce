@@ -1,5 +1,4 @@
-
 export interface Session {
-    isAuth: boolean,
-    userId: number | null,
+  isAuth: boolean
+  userId: number | null
 }
