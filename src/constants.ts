@@ -1,0 +1,9 @@
+export const COLORS = {
+  ASH_BROWN: '#594839',
+  BROWN: '#734002',
+  DARK: '#231300',
+  DUCKY_YELLOW: '#F2CB05',
+  LIGHT: '#FDFDF9',
+  MUSTARD_HUE: '#D9A404',
+  YELLOW: '#F2E307'
+}

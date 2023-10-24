@@ -1,9 +1,11 @@
 import { styled } from 'styled-components'
+import { COLORS } from '../../constants'
+
 export const SecondaryButtonStyle = styled.button`
-color: #D9A404;
+color: ${COLORS.MUSTARD_HUE};
 font-size: 12px;
 padding: 2px 14px;
-background-color: #594839;
+background-color: ${COLORS.ASH_BROWN};
 border-radius: 6px;
 outline: none;
 border: none;
@@ -17,8 +19,8 @@ text-transform: uppercase;
   border-radius: 8px;
   padding: 4px 18px;
   &:hover{
-    background-color: #D9A404;
-    color: #594839;
+    background-color: ${COLORS.MUSTARD_HUE};
+    color: ${COLORS.ASH_BROWN};
   }
 }
 

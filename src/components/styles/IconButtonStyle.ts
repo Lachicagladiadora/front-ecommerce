@@ -1,6 +1,8 @@
 import { styled } from 'styled-components'
+import { COLORS } from '../../constants'
+
 export const IconButtonStyle = styled.button`
-color: #231300;
+color: ${COLORS.DARK};
 font-size: 16px;
 padding: 6px;
 background-color: transparent;
@@ -23,14 +25,14 @@ justify-content: center;
   gap: 12px;
   &:hover{
     background-color: transparent;
-    color: #594839;
+    color: ${COLORS.ASH_BROWN};
   }
 }
 
 `
 
 export const TextButton = styled.span`
-  color: #231300;
+  color: ${COLORS.DARK};
   font-size: 12px;
   padding: 0px 4px;
   text-transform: capitalize;
@@ -38,10 +40,9 @@ export const TextButton = styled.span`
   font-size: 14px;
   @media screen and (min-width: 1080px){
     font-size: 16px;
-    gap: 12px;
     &:hover{
       background-color: transparent;
-      color: #594839;
+      color: ${COLORS.ASH_BROWN};
     }
   }
 `
