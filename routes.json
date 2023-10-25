@@ -1,0 +1,5 @@
+{
+  "/api/v1/auth/status": "/status",
+  "/api/v1/auth/logout": "logout",
+  "/api/v1/auth/login": "login"
+}
